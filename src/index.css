@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .header-1 {
+    @apply text-6xl leading-[15rem] uppercase Gallery-Modern;
+  }
+  .header-2 {
+    @apply text-5xl leading-[10.5rem] uppercase Gallery-Modern;
+  }
+  .header-3 {
+    @apply text-4xl leading-[2.7rem] uppercase Gallery-Modern;
+  }
+  .header-4 {
+    @apply text-3xl leading-[2.4rem] uppercase Gallery-Modern;
+  }
+  .header-5 {
+    @apply text-2xl leading-[2.1rem] uppercase Gallery-Modern;
+  }
+  .header-6 {
+    @apply text-xl leading-[1.8rem] uppercase Gallery-Modern;
+  }
+  .button {
+    @apply text-base leading-[1.5rem] uppercase Neue-Montreal tracking-[0.25rem];
+  }
+  .body-lg {
+    @apply text-lg leading-[1.875rem] uppercase Neue-Montreal;
+  }
+  .body-md {
+    @apply text-base leading-[1.5rem] uppercase Neue-Montreal;
+  }
+}
+
+@layer base {
+  * {
+    @apply box-border
+  }
+  body {
+    @apply w-screen h-screen bg-egg-shell
+  }
+}
+
+@font-face {
+  font-family: Gallery-Modern;
+  src: url(/fonts/GALLERYMODERN.OTF)
+}
+
+.Gallery-Modern {
+  font-family: Gallery-Modern;
+}
+
+@font-face {
+  font-family: Neue-Montreal;
+  src: url(/fonts/NEUEMONTREAL-REGULAR.OTF)
+}
+
+.Neue-Montreal {
+  font-family: Neue-Montreal;
+}
