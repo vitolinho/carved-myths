@@ -44,7 +44,7 @@ function App() {
         </div>
       </div>
       <div className="w-full relative mb-[12.5rem] lg:mb-[15rem]">
-        <ParallaxBanner className="h-screen relative lg:hidden">
+        <ParallaxBanner className="h-screen relative brightness-50 lg:hidden">
           <ParallaxBannerLayer image={img5} speed={-10} className="z-0" />
         </ParallaxBanner>
         <video src="/statue.mp4" loop autoPlay muted className="w-screen h-screen object-cover brightness-50 hidden lg:block"/>    
