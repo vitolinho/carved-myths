@@ -48,7 +48,7 @@ function App() {
           <p className="header-2 text-white">
             Myths
           </p>
-          <p className="body-md text-egg-shell lg:w-[18.75rem]">
+          <p className="body-md text-silver lg:w-[18.75rem]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
           </p>
           <Button value="button" className="lg:w-fit"/>
@@ -66,7 +66,21 @@ function App() {
         <img src={img8} alt="eighth picture" className="w-[13.813rem] h-[6.5rem] lg:w-[28.25rem] lg:h-[16.125rem]"/>
         </div>
       </div>
-      <div className="h-screen bg-blue-100"></div>
+      <div className="bg-carbone rounded-t-3xl flex flex-col gap-y-[3.75rem] items-center justify-center px-5 py-20 lg:px-[4.5rem]">
+        <div className="w-full flex flex-col gap-y-[3.75rem] items-center justify-center lg:flex-row lg:justify-between">
+          <a href="#" className="button text-white">carved myths</a>
+          <div className="w-full flex flex-row justify-between lg:gap-x-5 lg:justify-normal lg:w-fit">
+            <a href="#" className="button text-silver">Link 1</a>
+            <a href="#" className="button text-silver">Link 2</a>
+            <a href="#" className="button text-silver">Link 3</a>
+            <a href="#" className="button text-silver">Link 4</a>
+          </div>
+        </div>
+        <div className="w-full flex flex-row items-center justify-between">
+          <a href="https://www.linkedin.com/in/vitomirlaces/" target="_blank" className="body-md text-silver" rel="noreferrer">© VITOMIRLACES</a>
+          <p className="body-md text-silver">2023</p>
+        </div>
+      </div>
     </>
   )
 }
