@@ -37,7 +37,7 @@
     @apply box-border
   }
   body {
-    @apply w-screen h-screen bg-egg-shell
+    @apply w-full h-screen bg-egg-shell
   }
 }
 
