@@ -7,6 +7,7 @@ import Button from "./components/button/button"
 import img1 from "/pictures/1.png"
 import img2 from "/pictures/2.png"
 import img3 from "/pictures/3.png"
+import img5 from "/pictures/5.png"
 import img6 from "/pictures/6.png"
 import img7 from "/pictures/7.png"
 import img8 from "/pictures/8.png"
@@ -43,7 +44,10 @@ function App() {
         </div>
       </div>
       <div className="w-full relative mb-[12.5rem] lg:mb-[15rem]">
-        <video src="/statue.mp4" loop autoPlay muted className="w-screen h-screen object-cover brightness-50"/>    
+        <ParallaxBanner className="h-screen relative lg:hidden">
+          <ParallaxBannerLayer image={img5} speed={-10} className="z-0" />
+        </ParallaxBanner>
+        <video src="/statue.mp4" loop autoPlay muted className="w-screen h-screen object-cover brightness-50 hidden lg:block"/>    
         <div className="absolute top-0 w-full h-full flex flex-col gap-y-10 px-5 py-10 items-start justify-center lg:px-[4.5rem] lg:gap-y-[3.75rem]">
           <p className="header-2 text-white">
             Myths
