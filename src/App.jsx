@@ -7,6 +7,9 @@ import Button from "./components/button/button"
 import img1 from "/pictures/1.png"
 import img2 from "/pictures/2.png"
 import img3 from "/pictures/3.png"
+import img6 from "/pictures/6.png"
+import img7 from "/pictures/7.png"
+import img8 from "/pictures/8.png"
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(false)
@@ -51,7 +54,19 @@ function App() {
           <Button value="button" className="lg:w-fit"/>
         </div>
       </div>
-      <div className="h-screen bg-slate-400"></div>
+      <div className="flex flex-col gap-y-[3.75rem] py-10 mb-[12.5rem] lg:mb-[15rem]">
+        <div className="w-full flex flex-row items-center px-5 lg:px-[4.5rem]">
+          <img src={img6} alt="sixth picture" className="w-[19rem] h-[15.313rem] lg:w-[41.688rem] lg:h-[35rem]"/>
+        </div>
+        <div className="flex flex-row items-center justify-between px-5 lg:px-[4.5rem] lg:justify-end lg:gap-x-[17.5rem]">
+          <p className="header-3 text-black lg:header-2">Geia</p>
+          <img src={img7} alt="seventh picture" className="w-[11.563rem] h-[17.313rem] lg:w-[27.375rem] lg:h-[39.375rem]"/>
+        </div>
+        <div className="w-full flex flex-row items-center px-5 lg:px-[4.5rem]">
+        <img src={img8} alt="eighth picture" className="w-[13.813rem] h-[6.5rem] lg:w-[28.25rem] lg:h-[16.125rem]"/>
+        </div>
+      </div>
+      <div className="h-screen bg-blue-100"></div>
     </>
   )
 }
