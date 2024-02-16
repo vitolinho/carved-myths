@@ -21,7 +21,7 @@ function App() {
     window.addEventListener("resize", handleWindowResize)
     handleWindowResize()
     return () => window.removeEventListener("resize", handleWindowResize)
-  }, [])
+  }, []) 
   return (
     <>
       <ParallaxBanner className="h-screen relative z-0">
